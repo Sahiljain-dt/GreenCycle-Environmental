@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Capture per-section screenshots of the Green Cycle homepage.
+Capture per-section screenshots of the Green Cycle Environmental homepage.
 Scrolls each target into view, waits for GSAP animations to settle,
 and saves PNGs to assets/screenshots/.
 """

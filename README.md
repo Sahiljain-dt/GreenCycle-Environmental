@@ -5,7 +5,7 @@ A modern, responsive homepage for **Green Cycle Environmental**, built with HTML
 ## Features
 
 - **TVG-inspired split hero** with rotating diagonal banner and dual CTA
-- **Circular "Green Cycle" service diagram** with animated SVG ring
+- **Circular "Green Cycle Environmental" service diagram** with animated SVG ring
 - **Alternating image/text sections** for mission, process, and technology
 - **Dark forest-green palette** with light contrast sections
 - **Smooth scroll animations** powered by GSAP + ScrollTrigger, including image clip-path reveals, parallax, SVG stroke draws, and staggered list items
@@ -51,8 +51,8 @@ Then visit: `http://localhost:8080`
 1. **Navigation** — sticky header with mobile menu and active-section highlighting
 2. **Hero** — split-screen intro with animated headline and rotating diagonal banner
 3. **Mission** — company introduction with image reveal
-4. **The Green Cycle** — circular diagram of 4 core services
-5. **Why Green Cycle** — icon-driven feature grid
+4. **The Green Cycle Environmental** — circular diagram of 4 core services
+5. **Why Green Cycle Environmental** — icon-driven feature grid
 6. **Process & Technology** — alternating image/text blocks
 7. **Impact Stats** — animated counters
 8. **Call-to-Action** — consultation prompt
