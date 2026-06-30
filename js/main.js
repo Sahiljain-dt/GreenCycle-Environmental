@@ -101,6 +101,27 @@
     return;
   }
 
+  // Disable complex scroll animations on mobile for better performance and UX
+  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+  if (isMobile) {
+    // Show all elements immediately on mobile - no scroll-triggered animations
+    gsap.set('.hero-label, .hero-title .line, .hero-subtitle, .hero-text, .hero-content .btn, .hero-diagonal', { opacity: 1, x: 0, y: 0 });
+    gsap.set('.transparency .vertical-accent', { opacity: 1, height: 'auto' });
+    gsap.set('.transparency-content > *', { opacity: 1, y: 0 });
+    gsap.set('.transparency-image img', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', scale: 1 });
+    gsap.set('.cycle-point', { opacity: 1, y: 0, scale: 1 });
+    gsap.set('.capability-image img, .capability-svg', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', scale: 1 });
+    gsap.set('.capability-content > *', { opacity: 1, y: 0 });
+    gsap.set('.advantage-card', { opacity: 1, y: 0, scale: 1 });
+    gsap.set('.impact-item', { opacity: 1, y: 0, scale: 1 });
+    gsap.set('.cta-content > *', { opacity: 1, y: 0 });
+    
+    counters.forEach((counter) => {
+      counter.textContent = counter.dataset.target;
+    });
+    return;
+  }
+
   /**
    * Helper: animate SVG strokes by drawing them on scroll.
    * Accepts a selector string or an iterable of elements.
