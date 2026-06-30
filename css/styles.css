@@ -791,6 +791,47 @@ button {
   margin-bottom: 0.5rem;
 }
 
+.footer-contact a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color var(--transition-fast);
+}
+
+.footer-contact a:hover {
+  color: var(--green-300);
+}
+
+.footer-phone {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--white) !important;
+  margin-bottom: 1.25rem;
+}
+
+.footer-phone a {
+  color: var(--white) !important;
+}
+
+.footer-address {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--green-500);
+}
+
+.footer-address p {
+  margin-bottom: 0.15rem;
+  line-height: 1.5;
+}
+
+.footer-email {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-email a {
+  font-weight: 500;
+}
+
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 2rem;
