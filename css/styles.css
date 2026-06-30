@@ -321,7 +321,7 @@ button {
   transform: translateY(-50%);
   width: 60%;
   max-width: 900px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .hero-illustration {
@@ -334,11 +334,10 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 180px;
+  height: 120px;
   background: linear-gradient(135deg, var(--green-800) 0%, var(--green-600) 100%);
-  transform: skewY(-4deg);
-  transform-origin: bottom left;
-  z-index: 3;
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -346,13 +345,12 @@ button {
 }
 
 .diagonal-content {
-  transform: skewY(4deg);
   text-align: right;
   max-width: var(--container-max);
   margin: 0 auto;
   width: 100%;
   padding: 0 var(--container-padding);
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .diagonal-content span {
@@ -958,11 +956,11 @@ button {
 
   .hero-diagonal {
     height: 100px;
-    transform: skewY(-2deg);
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
   }
 
   .diagonal-content {
-    transform: skewY(2deg);
+    transform: none;
   }
 
   .diagonal-content span {
@@ -1042,12 +1040,12 @@ button {
 
 @media (max-width: 480px) {
   .hero-diagonal {
-    height: 60px;
-    transform: skewY(-1.5deg);
+    height: 80px;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
   }
 
   .diagonal-content {
-    transform: skewY(1.5deg);
+    transform: none;
   }
 
   .btn {
