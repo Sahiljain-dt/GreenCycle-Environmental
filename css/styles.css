@@ -857,10 +857,11 @@ button {
     height: auto;
     min-height: 50px;
     padding: 0.75rem var(--container-padding);
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     background: linear-gradient(90deg, var(--green-800) 0%, var(--green-600) 100%);
     z-index: 1;
     justify-content: center;
+    border-radius: 8px;
   }
 
   .diagonal-content {
