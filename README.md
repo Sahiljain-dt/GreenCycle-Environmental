@@ -75,3 +75,4 @@ Tested in modern browsers including Chrome, Safari, Firefox, and Edge.
 - This is the **homepage** (Phase 1). Additional inner pages can be added in a future phase.
 - Placeholder contact information is used. Replace it with real details before launch.
 - Hero and mission images are included locally for reliable offline viewing.
+# Vercel deploy trigger
