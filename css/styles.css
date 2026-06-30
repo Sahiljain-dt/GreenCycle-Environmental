@@ -814,8 +814,9 @@ button {
   .hero {
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 7rem;
-    padding-bottom: 10rem;
+    min-height: auto;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
     text-align: center;
   }
 
@@ -841,8 +842,29 @@ button {
     margin-top: 3rem;
   }
 
+  .transparency {
+    padding: 5rem 0;
+  }
+
+  .cycle {
+    padding: 5rem 0;
+  }
+
+  .capabilities {
+    padding: 5rem 0;
+  }
+
+  .advantage {
+    padding: 5rem 0;
+  }
+
+  .cta-section {
+    padding: 5rem 0;
+  }
+
   .hero-diagonal {
     justify-content: center;
+    height: 70px;
   }
 
   .diagonal-content {
@@ -861,7 +883,7 @@ button {
   }
 
   .cycle-points {
-    min-height: 700px;
+    min-height: 500px;
   }
 
   .cycle-point {
@@ -944,8 +966,9 @@ button {
   }
 
   .hero {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    min-height: auto;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
   }
 
   .hero-title {
@@ -960,8 +983,45 @@ button {
     font-size: 1rem;
   }
 
-  .transparency-layout {
-    grid-template-columns: 1fr;
+  .transparency {
+    padding: 4rem 0;
+  }
+
+  .transparency-image img {
+    height: 220px;
+  }
+
+  .cycle {
+    padding: 4rem 0;
+  }
+
+  .capabilities {
+    padding: 4rem 0;
+  }
+
+  .capability-row {
+    gap: 2rem;
+  }
+
+  .capability-image img,
+  .capability-svg {
+    height: 240px;
+  }
+
+  .advantage {
+    padding: 4rem 0;
+  }
+
+  .advantage-header {
+    margin-bottom: 2rem;
+  }
+
+  .cta-section {
+    padding: 4rem 0;
+  }
+
+  .footer {
+    padding: 3rem 0 1.5rem;
   }
 
   .vertical-accent {
@@ -969,7 +1029,7 @@ button {
   }
 
   .transparency-image img {
-    height: 300px;
+    height: 220px;
   }
 
   .cycle-header {
@@ -1037,7 +1097,8 @@ button {
   }
 
   .diagonal-content span {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
   }
 
   .btn {
@@ -1046,7 +1107,20 @@ button {
 
   .capability-image img,
   .capability-svg {
-    height: 260px;
+    height: 200px;
+  }
+
+  .advantage-card {
+    padding: 1.25rem;
+  }
+
+  .cta-content h2 {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 
