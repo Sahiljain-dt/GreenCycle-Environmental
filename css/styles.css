@@ -833,11 +833,50 @@ button {
   }
 
   .hero-visual {
-    display: none;
+    display: block;
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 2rem;
+    z-index: 1;
   }
 
-  .transparency {
-    padding: 5rem 0;
+  .hero-image {
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .hero-diagonal {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    height: auto;
+    min-height: 50px;
+    padding: 0.75rem var(--container-padding);
+    margin-top: 1.5rem;
+    background: linear-gradient(90deg, var(--green-800) 0%, var(--green-600) 100%);
+    z-index: 1;
+    justify-content: center;
+  }
+
+  .diagonal-content {
+    text-align: center;
+    padding: 0;
+  }
+
+  .diagonal-content span {
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    line-height: 1.4;
+    display: inline;
+  }
+
+  .diagonal-content span + span::before {
+    content: ' · ';
   }
 
   .cycle {
@@ -1040,8 +1079,7 @@ button {
   }
 
   .cycle-svg {
-    position: relative;
-    margin-bottom: 2rem;
+    display: none;
   }
 
   .cycle-points {
@@ -1059,6 +1097,9 @@ button {
     transform: none !important;
     max-width: 100%;
     text-align: left;
+    padding: 1.25rem;
+    border-left: 4px solid var(--green-500);
+    border-radius: 0 12px 12px 0;
   }
 
   .cycle-point:hover {
