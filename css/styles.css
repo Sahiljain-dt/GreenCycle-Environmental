@@ -371,6 +371,7 @@ button {
   padding: 8rem 0;
   background-color: var(--white);
   position: relative;
+  z-index: 2;
 }
 
 .transparency-layout {
@@ -948,6 +949,7 @@ button {
 
   .hero {
     padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .hero-title {
@@ -955,7 +957,12 @@ button {
   }
 
   .hero-diagonal {
-    height: 140px;
+    height: 100px;
+    transform: skewY(-2deg);
+  }
+
+  .diagonal-content {
+    transform: skewY(2deg);
   }
 
   .diagonal-content span {
@@ -1035,7 +1042,12 @@ button {
 
 @media (max-width: 480px) {
   .hero-diagonal {
-    height: 120px;
+    height: 60px;
+    transform: skewY(-1.5deg);
+  }
+
+  .diagonal-content {
+    transform: skewY(1.5deg);
   }
 
   .btn {
