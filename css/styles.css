@@ -856,8 +856,9 @@ button {
     right: auto;
     height: auto;
     min-height: 50px;
-    padding: 0.75rem var(--container-padding);
-    margin-top: 2rem;
+    padding: 1rem var(--container-padding);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
     background: linear-gradient(90deg, var(--green-800) 0%, var(--green-600) 100%);
     z-index: 1;
     justify-content: center;
