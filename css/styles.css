@@ -811,6 +811,13 @@ button {
   color: var(--white) !important;
 }
 
+.footer-phone .phone-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  color: var(--white);
+}
+
 .footer-address {
   margin-bottom: 1rem;
   padding-left: 1rem;
