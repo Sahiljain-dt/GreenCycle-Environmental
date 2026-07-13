@@ -319,8 +319,8 @@ button {
   right: -5%;
   top: 52%;
   transform: translateY(-50%);
-  width: 60%;
-  max-width: 900px;
+  width: 55%;
+  max-width: 800px;
   z-index: 3;
 }
 
@@ -851,9 +851,16 @@ button {
 }
 
 /* Responsive Styles */
+@media (max-width: 1500px) {
+  .hero-visual {
+    width: 48%;
+    right: -5%;
+  }
+}
+
 @media (max-width: 1200px) {
   .hero-visual {
-    width: 50%;
+    width: 48%;
     right: -8%;
   }
 }
