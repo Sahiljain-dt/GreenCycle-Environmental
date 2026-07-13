@@ -165,7 +165,7 @@
     .fromTo('.hero-subtitle', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.7, immediateRender: false }, '-=0.5')
     .fromTo('.hero-text', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.7, immediateRender: false }, '-=0.5')
     .fromTo('.hero-content .btn', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, immediateRender: false }, '-=0.4')
-    .fromTo('.hero-visual', { opacity: 0, x: 80, scale: 0.95 }, { opacity: 1, x: 0, scale: 1, duration: 1.2, immediateRender: false }, '-=1')
+    .fromTo('.hero-visual', { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.9, ease: 'power2.out', immediateRender: false }, '-=0.6')
     .fromTo('.hero-diagonal', { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' }, '-=0.4');
 
   // Hero parallax
