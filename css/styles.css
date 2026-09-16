@@ -930,6 +930,9 @@ button {
   }
 
   .hero-image {
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 12px;
     box-shadow: var(--shadow-lg);
   }
