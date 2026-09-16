@@ -177,6 +177,16 @@ button {
   line-height: 1;
 }
 
+.logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+.footer-logo .logo-img {
+  height: 52px;
+}
+
 /* Navigation */
 .navbar {
   position: fixed;
@@ -609,6 +619,13 @@ button {
   height: 360px;
 }
 
+.capability-intro {
+  color: var(--gray-600);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  max-width: 560px;
+}
+
 .capability-title {
   font-family: var(--font-heading);
   font-size: clamp(1.75rem, 3vw, 2.5rem);
@@ -902,6 +919,14 @@ button {
   .hero-image {
     border-radius: 12px;
     box-shadow: var(--shadow-lg);
+  }
+
+  .logo-img {
+    height: 36px;
+  }
+
+  .footer-logo .logo-img {
+    height: 44px;
   }
 
   .hero-diagonal {

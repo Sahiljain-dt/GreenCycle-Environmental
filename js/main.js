@@ -433,15 +433,17 @@
   });
 
   // CTA section
-  gsap.from('.cta-content > *', {
-    opacity: 0,
-    y: 40,
-    duration: 0.8,
-    stagger: 0.15,
-    ease: 'power2.out',
-    scrollTrigger: {
-      trigger: '.cta-section',
-      start: 'top 70%',
+  // CTA section entrance — explicit trigger + plain tween avoids ScrollTrigger
+  // config-bleed with the parallax scrub below (was leaving the button stuck at
+  // opacity 0 after scrolling past).
+  let ctaPlayed = false;
+  ScrollTrigger.create({
+    trigger: '.cta-section',
+    start: 'top 70%',
+    onEnter: () => {
+      if (ctaPlayed) return;
+      ctaPlayed = true;
+      gsap.fromTo('.cta-content > *', { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.8, stagger: 0.15, ease: 'power2.out' });
     },
   });
 
