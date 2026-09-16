@@ -1253,7 +1253,7 @@ button {
   }
 
   .cta-content h2 {
-    font-size: clamp(1.75rem, 7vw, 2.5rem);
+    font-size: clamp(1.75rem, 6.5vw, 2.25rem);
   }
 
   .footer-grid {
@@ -1401,4 +1401,30 @@ a:focus-visible,
 button:focus-visible {
   outline: 3px solid var(--green-400);
   outline-offset: 2px;
+}
+
+
+@media (max-width: 768px) {
+  /* Consistent mobile type scale — placed at the end of the stylesheet so it
+     wins the cascade over equal-specificity base rules above. */
+  .section-title,
+  .cycle-header-content .section-title,
+  .transparency-content .section-title,
+  .cta-content h2 {
+    font-size: clamp(1.75rem, 6.5vw, 2.25rem);
+  }
+
+  .capability-title {
+    font-size: 1.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1.1rem, 4vw, 1.35rem);
+  }
+
+  .hero-text,
+  .advantage-header p,
+  .cta-content p {
+    font-size: 1rem;
+  }
 }
