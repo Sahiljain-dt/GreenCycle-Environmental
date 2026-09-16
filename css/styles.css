@@ -1104,7 +1104,8 @@ button {
   }
 
   .hero-diagonal {
-    height: 60px;
+    height: auto;
+    min-height: 60px;
   }
 
   .diagonal-content span {
@@ -1225,7 +1226,8 @@ button {
 
 @media (max-width: 480px) {
   .hero-diagonal {
-    height: 50px;
+    height: auto;
+    min-height: 50px;
   }
 
   .diagonal-content span {
