@@ -296,7 +296,7 @@ button {
   font-family: var(--font-heading);
   font-size: clamp(2.25rem, 5vw, 4rem);
   font-weight: 700;
-  line-height: 0.95;
+  line-height: 1.1;
   color: var(--green-900);
   text-transform: uppercase;
   margin-bottom: 1.5rem;
