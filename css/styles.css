@@ -1055,6 +1055,10 @@ button {
     --container-padding: 1.25rem;
   }
 
+  .navbar {
+    padding: 0.5rem 0;
+  }
+
   .nav-links {
     position: fixed;
     top: 0;
@@ -1098,7 +1102,7 @@ button {
 
   .hero {
     min-height: auto;
-    padding-top: 9rem;
+    padding-top: 7.5rem;
     padding-bottom: 4rem;
   }
 
