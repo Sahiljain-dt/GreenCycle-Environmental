@@ -502,6 +502,10 @@ button {
   line-height: 1;
 }
 
+.cycle-header-content .section-title {
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+}
+
 .cycle-diagram {
   position: relative;
   max-width: 900px;
