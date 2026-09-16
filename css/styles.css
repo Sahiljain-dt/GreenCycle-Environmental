@@ -1329,6 +1329,68 @@ button:focus-visible {
   box-shadow: var(--shadow-lg);
 }
 
+/* Hero load animation — masked line reveal on the headline, quick fade-ups on
+   supporting copy, and a slow zoom-in on the image. */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes heroLineReveal {
+  from { clip-path: inset(0 0 100% 0); transform: translateY(0.4em); }
+  to { clip-path: inset(0 0 -12% 0); transform: translateY(0); }
+}
+
+@keyframes heroImageIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes heroImageZoom {
+  from { transform: scale(1.12); }
+  to { transform: scale(1); }
+}
+
+.hero-label {
+  animation: heroFadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.05s backwards;
+}
+
+.hero-title .line {
+  animation: heroLineReveal 0.75s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+.hero-title .line:nth-child(1) {
+  animation-delay: 0.15s;
+}
+
+.hero-title .line:nth-child(2) {
+  animation-delay: 0.27s;
+}
+
+.hero-subtitle {
+  animation: heroFadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.45s backwards;
+}
+
+.hero-text {
+  animation: heroFadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.57s backwards;
+}
+
+.hero-content .btn {
+  animation: heroFadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.7s backwards;
+}
+
+.hero-visual {
+  animation: heroImageIn 0.9s ease-out 0.3s backwards;
+}
+
+.hero-visual .hero-image {
+  animation: heroImageZoom 1.6s cubic-bezier(0.22, 1, 0.36, 1) 0.3s backwards;
+}
+
+.hero-diagonal {
+  animation: heroFadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.65s backwards;
+}
+
 /* Advantage Section */
 .advantage {
   padding: 8rem 0;
