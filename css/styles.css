@@ -1076,12 +1076,13 @@ button {
     justify-content: flex-start;
     padding: 5rem 2rem;
     gap: 1.75rem;
-    box-shadow: var(--shadow-lg);
-    transition: right var(--transition-base);
+    box-shadow: 0 0 0 9999px rgba(15, 40, 25, 0), var(--shadow-lg);
+    transition: right var(--transition-base), box-shadow var(--transition-base);
   }
 
   .nav-links.active {
     right: 0;
+    box-shadow: 0 0 0 9999px rgba(15, 40, 25, 0.45), var(--shadow-lg);
   }
 
   .nav-links a {
@@ -1262,6 +1263,11 @@ button {
 }
 
 @media (max-width: 480px) {
+  .nav-links {
+    width: 100%;
+    max-width: none;
+  }
+
   .hero-diagonal {
     height: auto;
     min-height: 50px;
