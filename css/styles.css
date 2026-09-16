@@ -925,7 +925,7 @@ button {
     transform: none;
     width: 100%;
     max-width: 100%;
-    margin-top: 2rem;
+    margin: 1.5rem 0;
     z-index: 1;
   }
 

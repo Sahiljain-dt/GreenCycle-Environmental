@@ -75,6 +75,26 @@
 
   window.addEventListener('scroll', setActiveNav, { passive: true });
 
+  // On mobile/tablet layouts, place the hero image directly below the headline
+  // (instead of at the bottom of the hero section).
+  const heroSection = document.querySelector('.hero');
+  const heroTitleEl = document.querySelector('.hero-title');
+  const heroVisual = document.querySelector('.hero-visual');
+
+  function positionHeroVisual() {
+    if (!heroSection || !heroTitleEl || !heroVisual) return;
+    if (window.matchMedia('(max-width: 1024px)').matches) {
+      if (heroVisual.previousElementSibling !== heroTitleEl) {
+        heroTitleEl.insertAdjacentElement('afterend', heroVisual);
+      }
+    } else if (heroVisual.parentElement !== heroSection) {
+      heroSection.appendChild(heroVisual);
+    }
+  }
+
+  positionHeroVisual();
+  window.addEventListener('resize', positionHeroVisual);
+
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');
