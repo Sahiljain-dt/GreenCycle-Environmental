@@ -294,17 +294,21 @@ button {
 
 .hero-title {
   font-family: var(--font-heading);
-  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-size: clamp(2.25rem, 5vw, 4rem);
   font-weight: 700;
   line-height: 0.95;
   color: var(--green-900);
   text-transform: uppercase;
   margin-bottom: 1.5rem;
-  max-width: 580px;
+  max-width: 640px;
 }
 
 .hero-title .line {
   display: block;
+}
+
+.hero-title .line-sub {
+  font-size: 0.62em;
 }
 
 .hero-subtitle {
