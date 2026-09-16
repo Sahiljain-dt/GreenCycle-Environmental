@@ -1117,6 +1117,11 @@ button {
 
   .diagonal-content span {
     font-size: 1rem;
+    display: block;
+  }
+
+  .diagonal-content span + span::before {
+    content: none;
   }
 
   .transparency {
