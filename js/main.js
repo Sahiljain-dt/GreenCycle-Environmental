@@ -196,29 +196,8 @@
     });
   }
 
-  // Hero entrance animation
-  const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
-
-  heroTl
-    .fromTo('.hero-label', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.7, immediateRender: false })
-    .fromTo('.hero-title .line', { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.9, stagger: 0.12, immediateRender: false }, '-=0.4')
-    .fromTo('.hero-subtitle', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.7, immediateRender: false }, '-=0.5')
-    .fromTo('.hero-text', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.7, immediateRender: false }, '-=0.5')
-    .fromTo('.hero-content .btn', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, immediateRender: false }, '-=0.4')
-    .fromTo('.hero-visual', { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.9, ease: 'power2.out', immediateRender: false }, '-=0.6')
-    .fromTo('.hero-diagonal', { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' }, '-=0.4');
-
-  // Hero parallax
-  gsap.to('.hero-visual', {
-    yPercent: -8,
-    ease: 'none',
-    scrollTrigger: {
-      trigger: '.hero',
-      start: 'top top',
-      end: 'bottom top',
-      scrub: true,
-    },
-  });
+  // Hero entrance animation and parallax intentionally removed — the hero
+  // section renders statically (client request).
 
   // Transparency section
   gsap.from('.transparency .vertical-accent', {
