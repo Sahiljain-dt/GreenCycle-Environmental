@@ -95,6 +95,26 @@
   positionHeroVisual();
   window.addEventListener('resize', positionHeroVisual);
 
+  // Same idea for the About section: on mobile/tablet, place the facility image
+  // directly below the section heading (before the paragraphs).
+  const transparencyLayout = document.querySelector('.transparency-layout');
+  const transparencyTitle = document.querySelector('.transparency-content .section-title');
+  const transparencyImage = document.querySelector('.transparency-image');
+
+  function positionTransparencyImage() {
+    if (!transparencyLayout || !transparencyTitle || !transparencyImage) return;
+    if (window.matchMedia('(max-width: 1024px)').matches) {
+      if (transparencyImage.previousElementSibling !== transparencyTitle) {
+        transparencyTitle.insertAdjacentElement('afterend', transparencyImage);
+      }
+    } else if (transparencyImage.parentElement !== transparencyLayout) {
+      transparencyLayout.appendChild(transparencyImage);
+    }
+  }
+
+  positionTransparencyImage();
+  window.addEventListener('resize', positionTransparencyImage);
+
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');

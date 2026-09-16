@@ -1007,7 +1007,7 @@ button {
 
   .transparency-image {
     grid-column: 1 / -1;
-    margin-top: 1rem;
+    margin: 1.5rem 0;
   }
 
   .cycle-points {
