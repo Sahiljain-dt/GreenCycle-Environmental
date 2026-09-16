@@ -178,13 +178,13 @@ button {
 }
 
 .logo-img {
-  height: 44px;
+  height: 58px;
   width: auto;
   display: block;
 }
 
 .footer-logo .logo-img {
-  height: 52px;
+  height: 76px;
 }
 
 /* Navigation */
@@ -922,11 +922,11 @@ button {
   }
 
   .logo-img {
-    height: 36px;
+    height: 42px;
   }
 
   .footer-logo .logo-img {
-    height: 44px;
+    height: 56px;
   }
 
   .hero-diagonal {
