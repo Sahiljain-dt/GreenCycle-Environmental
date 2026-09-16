@@ -1163,6 +1163,7 @@ button {
   .cycle-header {
     align-items: center;
     gap: 1rem;
+    margin-bottom: 3rem;
   }
 
   .vertical-text {
@@ -1190,6 +1191,7 @@ button {
     left: auto !important;
     top: auto !important;
     transform: none !important;
+    width: auto;
     max-width: 100%;
     text-align: left;
     padding: 1.25rem;
