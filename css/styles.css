@@ -1103,7 +1103,7 @@ button {
   .hero {
     min-height: auto;
     padding-top: 7.5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2.5rem;
   }
 
   .hero-title {
@@ -1125,7 +1125,7 @@ button {
   }
 
   .transparency {
-    padding: 4rem 0;
+    padding: 2.5rem 0;
   }
 
   .transparency-image img {
@@ -1133,11 +1133,11 @@ button {
   }
 
   .cycle {
-    padding: 4rem 0;
+    padding: 2.5rem 0;
   }
 
   .capabilities {
-    padding: 4rem 0;
+    padding: 2.5rem 0;
   }
 
   .capability-row {
@@ -1150,7 +1150,7 @@ button {
   }
 
   .advantage {
-    padding: 4rem 0;
+    padding: 2.5rem 0;
   }
 
   .advantage-header {
@@ -1158,11 +1158,11 @@ button {
   }
 
   .cta-section {
-    padding: 4rem 0;
+    padding: 2.5rem 0;
   }
 
   .footer {
-    padding: 3rem 0 1.5rem;
+    padding: 2.5rem 0 1.25rem;
   }
 
   .vertical-accent {
